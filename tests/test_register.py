@@ -19,9 +19,11 @@ class TestRegister(softest.TestCase, unittest.TestCase):
     # Enter a profile name.
     # Select a date of birth.
     # Select a gender.
+    # Accept Marketing box
+    # Accept Privacy box
     # Click on the "Sign Up" button.
     # Verify register name from profile
-    
+
     def test_valid_login(self):
         register = Register(self.driver)
         register.accept_cookies()

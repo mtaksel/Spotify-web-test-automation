@@ -1,5 +1,22 @@
 Test Cases for Spotify Web Application
 User Authentication
+    
+    Register
+        Test Case: User can make a new account.
+            Accept cookies.
+            Click Register button.
+            Enter a valid email address.
+            Click on the "Continue" button.
+            Enter a valid password.
+            Click on the "Continue" button.
+            Enter a profile name.
+            Select a date of birth.
+            Select a gender.
+            Click on the "Continue" button.
+            Accept Marketing box
+            Accept Privacy box
+            Click on the "Continue" button.
+            Verify register name from profile
 
     Valid Login
         Test Case: User can log in with valid credentials.
