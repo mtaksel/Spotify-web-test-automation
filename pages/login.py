@@ -31,7 +31,7 @@ class Login(PageBase):
     
     def assert_error_text(self):
         msg_box = self.wait_element_visibility(ERROR_TEXT_LOCATE)
-        return msg_box
+        return msg_box.text
     
     def click_logout_button(self):
         logout_button = self.wait_element_visibility(LOGOUT_BUTTON_LOCATE)

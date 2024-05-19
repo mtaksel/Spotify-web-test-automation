@@ -5,6 +5,7 @@ User Authentication
 Register
 
 ``
+
         Test Case: User can make a new account.
             Accept cookies.
             Click Register button.
@@ -20,11 +21,13 @@ Register
             Accept Privacy box
             Click on the "Continue" button.
             Verify register name from profile
+
 ``
 
 Valid Login
 
 ``
+
         Test Case: User can log in with valid credentials.
         Steps:
             Open the Spotify web app.
@@ -32,11 +35,13 @@ Valid Login
             Enter valid email and password.
             Click the "Log In" button.
         Expected Result: User is redirected to the homepage and logged in successfully.
+
 ``
 
 Invalid Login
 
 ``
+
         Test Case: User cannot log in with invalid credentials.
         Steps:
             Open the Spotify web app.
@@ -44,11 +49,13 @@ Invalid Login
             Enter invalid email or password.
             Click the "Log In" button.
         Expected Result: An error message is displayed, and the user remains on the login page.
+
 ``
 
 Logout
 
 ``
+
         Test Case: User can log out successfully.
         Steps:
             Log in to the Spotify web app.

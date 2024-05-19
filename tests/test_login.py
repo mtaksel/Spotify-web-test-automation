@@ -20,7 +20,7 @@ class TestLogin(softest.TestCase, unittest.TestCase):
         login.fill_login_informations()
         login.click_signin_button()
         self.soft_assert(self.assertEqual,register.assert_spotify_profile(),NAME, "The data is not matching")
-        self.assert_all
+        self.assert_all()
     
     def test_invalid_login(self):
         login = Login(self.driver)
@@ -29,7 +29,7 @@ class TestLogin(softest.TestCase, unittest.TestCase):
         login.click_login_button()
         login.click_signin_button()
         self.soft_assert(self.assertEqual,login.assert_error_text(),INVALID_LOGIN_ERROR_TEXT, "Error msg is not matching")
-        self.assert_all
+        self.assert_all()
 
     def test_logout(self):
         login = Login(self.driver)

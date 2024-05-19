@@ -42,6 +42,18 @@ SKIP_ICON_LOCATE = (By.CLASS_NAME, "mnipjT4SLDMgwiDCEnRC")
 FOOTER_SONG_NAME_LOCATE = (By.CLASS_NAME, "deomraqfhIAoSB3SgXpu")
 RAMMSTEIN_SONG_TEXT = ("Şu anda çalan: Rammstein tarafından Sonne")
 
+##PLAYLIST##
+
+CROSS_ICON_LOCATE = (By.CLASS_NAME, "IconWrapper__Wrapper-sc-16usrgb-0.hYdsxw")
+CREATE_PLAYLIST_BUTTON = (By.CLASS_NAME, "Type__TypeElement-sc-goli3j-0.dsbIME.ellipsis-one-line.htqz7Vb8mLJvGKTi1vrs")
+POP_UP_LOCATE = (By.CLASS_NAME, "Button-sc-1dqy6lx-0.hidZeW.yclq4HDmRA_euiUYwB9O")
+PLAYLIST_TEXT_LOCATE = (By.CLASS_NAME, "encore-text.encore-text-body-small.lp9Tfm4rsM9_pfbIE0zd")
+PLAYLIST_TEXT = "Çalma listesi"
+SEARCH_BAR_LOCATE = (By.CLASS_NAME, "encore-text.encore-text-body-small.FeWwGSRANj36qpOBoxdx")
+ADD_TEST_SONG1 = (By.XPATH, "//*[@id='main']/div/div[2]/div[3]/div[1]/div[2]/div[2]/div[2]/main/div[1]/section/div[2]/div[3]/div/div[1]/div/div[2]/div[4]/div/div[4]/button")
+ADD_TEST_SONG2 = (By.XPATH, "//*[@id='main']/div/div[2]/div[3]/div[1]/div[2]/div[2]/div[2]/main/div[1]/section/div[2]/div[3]/div/div[1]/div/div[2]/div[5]/div/div[4]/button")
+SONG_LOCATE = (By.CLASS_NAME, "IjYxRc5luMiDPhKhZVUH.UpiE7J6vPrJIa59qxts4")
+
 
 ##TEST DATA##
 

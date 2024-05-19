@@ -41,5 +41,5 @@ class TestRegister(softest.TestCase, unittest.TestCase):
         register.click_continue_button1()
         register.assert_spotify_profile()
         self.soft_assert(self.assertEqual,register.assert_spotify_profile(),NAME, "The data is not matching")
-        self.assert_all
+        self.assert_all()
         

@@ -28,7 +28,6 @@ class Playback(PageBase):
         song_img.click()
         sleep(2)
         
-
     def assert_paused_song(self):
         paused_icon = self.wait_element_visibility(PLAY_ICON_LOCATE)
         get_label = paused_icon.get_attribute('aria-label')
