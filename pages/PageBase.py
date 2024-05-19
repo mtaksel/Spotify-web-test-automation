@@ -1,5 +1,6 @@
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.common.action_chains import ActionChains
 
 
 class PageBase:
@@ -43,3 +44,8 @@ class PageBase:
         # Take a screenshot when the assertion fails
             #screenshot_path = "failure.png"
             self.driver.save_screenshot(screenshot_path)
+
+    def hover(self, locator):
+        element_to_hover_over = self.wait_element_visibility(locator)
+        hover = ActionChains(self.driver).move_to_element(element_to_hover_over)
+        hover.perform()

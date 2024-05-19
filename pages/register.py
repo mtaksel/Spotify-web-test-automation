@@ -8,7 +8,6 @@ from pages.PageBase import PageBase
 from constants.globalconstants import *
 
 
-
 @pytest.mark.usefixtures("setup")
 class Register(PageBase):
     def __init__(self,driver):
@@ -73,5 +72,9 @@ class Register(PageBase):
         profile_button = self.wait_element_visibility(PROFILE_PIC_LOCATE)
         get_label = profile_button.get_attribute('aria-label')
         return get_label
+    
+    def click_spotify_profile(self):
+        profile_pic = self.wait_element_visibility(PROFILE_PIC_LOCATE)
+        profile_pic.click()
 
     

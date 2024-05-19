@@ -24,7 +24,7 @@ class TestRegister(softest.TestCase, unittest.TestCase):
     # Click on the "Sign Up" button.
     # Verify register name from profile
 
-    def test_valid_login(self):
+    def test_valid_register(self):
         register = Register(self.driver)
         register.accept_cookies()
         register.click_register_button()
@@ -41,4 +41,5 @@ class TestRegister(softest.TestCase, unittest.TestCase):
         register.click_continue_button1()
         register.assert_spotify_profile()
         self.soft_assert(self.assertEqual,register.assert_spotify_profile(),NAME, "The data is not matching")
+        self.assert_all
         
